@@ -9,6 +9,7 @@
 <remote  name="clang" fetch="https://github.com/kdrag0n" />
    
   <!-- Remove HALs -->
+<remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64" />
 <remove-project name="LineageOS/android_packages_apps_Settings" />
 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 <remove-project name="LineageOS/android_frameworks_base" />
@@ -25,6 +26,7 @@
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los-miatoll" revision="lineage-20.0" />
    
    <!-- addition -->
+<project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" remote="github" revision="backup/main_20230314" />
 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
 <project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
 <project path="frameworks/base" name="android_frameworks_base" remote="los-miatoll" revision="lineage-20.0" />
